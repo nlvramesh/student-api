@@ -19,4 +19,9 @@ public class UserController {
 
         return userService.registerUser(user);
     }
+
+    @GetMapping("/test")
+    public String test() {
+        return "User controller is working!";
+    }
 }
